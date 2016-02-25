@@ -8,18 +8,18 @@ define('HTTPS_SERVER', 'http://e-shop/admin/');
 define('HTTPS_CATALOG', 'http://e-shop/');
 
 // DIR
-define('DIR_APPLICATION', 'C:/OpenServer/domains/e-shop/admin/');
-define('DIR_SYSTEM', 'C:/OpenServer/domains/e-shop/system/');
-define('DIR_LANGUAGE', 'C:/OpenServer/domains/e-shop/admin/language/');
-define('DIR_TEMPLATE', 'C:/OpenServer/domains/e-shop/admin/view/template/');
-define('DIR_CONFIG', 'C:/OpenServer/domains/e-shop/system/config/');
-define('DIR_IMAGE', 'C:/OpenServer/domains/e-shop/image/');
-define('DIR_CACHE', 'C:/OpenServer/domains/e-shop/system/storage/cache/');
-define('DIR_DOWNLOAD', 'C:/OpenServer/domains/e-shop/system/storage/download/');
-define('DIR_LOGS', 'C:/OpenServer/domains/e-shop/system/storage/logs/');
-define('DIR_MODIFICATION', 'C:/OpenServer/domains/e-shop/system/storage/modification/');
-define('DIR_UPLOAD', 'C:/OpenServer/domains/e-shop/system/storage/upload/');
-define('DIR_CATALOG', 'C:/OpenServer/domains/e-shop/catalog/');
+define('DIR_APPLICATION', 'Z:/home/e-shop/www/admin/');
+define('DIR_SYSTEM', 'Z:/home/e-shop/www/system/');
+define('DIR_LANGUAGE', 'Z:/home/e-shop/www/admin/language/');
+define('DIR_TEMPLATE', 'Z:/home/e-shop/www/admin/view/template/');
+define('DIR_CONFIG', 'Z:/home/e-shop/www/system/config/');
+define('DIR_IMAGE', 'Z:/home/e-shop/www/image/');
+define('DIR_CACHE', 'Z:/home/e-shop/www/system/storage/cache/');
+define('DIR_DOWNLOAD', 'Z:/home/e-shop/www/system/storage/download/');
+define('DIR_LOGS', 'Z:/home/e-shop/www/system/storage/logs/');
+define('DIR_MODIFICATION', 'Z:/home/e-shop/www/system/storage/modification/');
+define('DIR_UPLOAD', 'Z:/home/e-shop/www/system/storage/upload/');
+define('DIR_CATALOG', 'Z:/home/e-shop/www/catalog/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
