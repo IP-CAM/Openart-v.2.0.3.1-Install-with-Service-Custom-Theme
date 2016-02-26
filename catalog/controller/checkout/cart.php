@@ -152,7 +152,7 @@ class ControllerCheckoutCart extends Controller {
 				}
 
 				$data['products'][] = array(
-					'cart_id'   => $product['cart_id'],
+					'key'       => $product['key'],
 					'thumb'     => $image,
 					'name'      => $product['name'],
 					'model'     => $product['model'],
@@ -234,16 +234,10 @@ class ControllerCheckoutCart extends Controller {
 
 			$data['checkout_buttons'] = array();
 
-			$files = glob(DIR_APPLICATION . '/controller/total/*.php');
-
-			if ($files) {
-				foreach ($files as $file) {
-					$extension = basename($file, '.php');
-
-					$data[$extension] = $this->load->controller('total/' . $extension);
-				}
-			}
-
+			$data['coupon'] = $this->load->controller('checkout/coupon');
+			$data['voucher'] = $this->load->controller('checkout/voucher');
+			$data['reward'] = $this->load->controller('checkout/reward');
+			$data['shipping'] = $this->load->controller('checkout/shipping');
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');
 			$data['content_top'] = $this->load->controller('common/content_top');
@@ -343,7 +337,6 @@ class ControllerCheckoutCart extends Controller {
 
 				$json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'product_id=' . $this->request->post['product_id']), $product_info['name'], $this->url->link('checkout/cart'));
 
-				// Unset all shipping and payment methods
 				unset($this->session->data['shipping_method']);
 				unset($this->session->data['shipping_methods']);
 				unset($this->session->data['payment_method']);

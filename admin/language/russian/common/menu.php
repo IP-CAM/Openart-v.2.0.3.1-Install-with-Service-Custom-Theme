@@ -1,14 +1,12 @@
 <?php
 // Text
-$_['text_analytics']                   = 'Аналитика';
 $_['text_affiliate']                   = 'Партнерская программа';
 $_['text_affiliate_activity']          = 'Активность партнера';
 $_['text_api']                         = 'API';
 $_['text_attribute']                   = 'Атрибуты';
 $_['text_attribute_group']             = 'Группа атрибутов';
-$_['text_backup']                      = 'Импорт / Экспорт';
+$_['text_backup']                      = 'Бэкап / Восстановление';
 $_['text_banner']                      = 'Баннеры';
-$_['text_captcha']                     = 'Защита от роботов';
 $_['text_catalog']                     = 'Каталог';
 $_['text_category']                    = 'Категории';
 $_['text_country']                     = 'Страны';
@@ -25,7 +23,6 @@ $_['text_error_log']                   = 'Журнал ошибок';
 $_['text_extension']                   = 'Модули';
 $_['text_feed']                        = 'Каналы продвижения';
 $_['text_filter']                      = 'Фильтры';
-$_['text_fraud']                       = 'Защита от мошенников';
 $_['text_geo_zone']                    = 'Географические зоны';
 $_['text_information']                 = 'Статьи';
 $_['text_installer']                   = 'Установка расширений';

@@ -45,8 +45,6 @@ Disallow: /*affiliate-forgot-password
 Disallow: /*create-affiliate-account
 Disallow: /*affiliate-login
 Disallow: /*affiliates
-Allow: /catalog/view/javascript/
-Allow: /catalog/view/theme/*/
 
 
 User-agent: Yandex
@@ -94,7 +92,5 @@ Disallow: /*affiliate-forgot-password
 Disallow: /*create-affiliate-account
 Disallow: /*affiliate-login
 Disallow: /*affiliates
-Allow: /catalog/view/javascript/
-Allow: /catalog/view/theme/*/
 Clean-param: tracking
 

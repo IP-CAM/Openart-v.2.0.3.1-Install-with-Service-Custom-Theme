@@ -486,7 +486,7 @@ class ControllerPaymentPPExpress extends Controller {
 			$transaction = $this->model_payment_pp_express->getFailedTransaction($this->request->get['paypal_order_transaction_id']);
 
 			if ($transaction) {
-				$call_data = json_decode($transaction['call_data'], true);
+				$call_data = unserialize($transaction['call_data']);
 
 				$result = $this->model_payment_pp_express->call($call_data);
 
@@ -885,7 +885,7 @@ class ControllerPaymentPPExpress extends Controller {
 		$this->model_payment_pp_express->uninstall();
 	}
 
-	public function order() {
+	public function action() {
 		if ($this->config->get('pp_express_status')) {
 			$this->load->model('payment/pp_express');
 			$this->load->language('payment/pp_express_order');

@@ -334,11 +334,11 @@ class ControllerUserUserPermission extends Controller {
 			'common/login',
 			'common/logout',
 			'common/forgotten',
-			'common/reset',			
-			'common/footer',
-			'common/header',
+			'common/reset',
 			'error/not_found',
 			'error/permission',
+			'common/footer',
+			'common/header',
 			'dashboard/order',
 			'dashboard/sale',
 			'dashboard/customer',
@@ -351,35 +351,12 @@ class ControllerUserUserPermission extends Controller {
 
 		$data['permissions'] = array();
 
-		$files = array();
+		$files = glob(DIR_APPLICATION . 'controller/*/*.php');
 
-		// Make path into an array
-		$path = array(DIR_APPLICATION . 'controller/*');
-
-		// While the path array is still populated keep looping through
-		while (count($path) != 0) {
-			$next = array_shift($path);
-
-			foreach (glob($next) as $file) {
-				// If directory add to path array
-				if (is_dir($file)) {
-					$path[] = $file . '/*';
-				}
-
-				// Add the file to the files to be deleted array
-				if (is_file($file)) {
-					$files[] = $file;
-				}
-			}
-		}
-
-		// Sort the file array
-		sort($files);
-					
 		foreach ($files as $file) {
-			$controller = substr($file, strlen(DIR_APPLICATION . 'controller/'));
+			$part = explode('/', dirname($file));
 
-			$permission = substr($controller, 0, strrpos($controller, '.'));
+			$permission = end($part) . '/' . basename($file, '.php');
 
 			if (!in_array($permission, $ignore)) {
 				$data['permissions'][] = $permission;

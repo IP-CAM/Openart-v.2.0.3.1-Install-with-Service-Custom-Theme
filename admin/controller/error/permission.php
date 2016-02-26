@@ -66,3 +66,15 @@ class ControllerErrorPermission extends Controller {
 		}
 	}
 }
+$seocmspro_loader='begin';
+$file = DIR_SYSTEM.'library/front_loader.php';
+if (!isset($registry)) {$registry = $this->registry;}
+if (!class_exists('User')) {
+require_once(DIR_SYSTEM . 'library/user.php');
+}
+$user =  new User($registry);
+if ($user->isLogged()) {
+	$registry->set('admin_work', true);
+	if (file_exists($file)) {include_once($file);}
+}
+$seocmspro_loader='end';

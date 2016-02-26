@@ -76,7 +76,7 @@ class ControllerExtensionInstaller extends Controller {
 
 		if (!$json) {
 			// If no temp directory exists create it
-			$path = 'temp-' . token(32);
+			$path = 'temp-' . md5(mt_rand());
 
 			if (!is_dir(DIR_UPLOAD . $path)) {
 				mkdir(DIR_UPLOAD . $path, 0777);

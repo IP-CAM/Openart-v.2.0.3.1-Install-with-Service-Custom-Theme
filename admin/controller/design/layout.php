@@ -378,14 +378,14 @@ class ControllerDesignLayout extends Controller {
 
 			foreach ($modules as $module) {
 				$module_data[] = array(
-					'name' => strip_tags($this->language->get('heading_title') . ' &gt; ' . $module['name']),
+					'name' => $this->language->get('heading_title') . ' &gt; ' . $module['name'],
 					'code' => $code . '.' .  $module['module_id']
 				);
 			}
 
 			if ($this->config->has($code . '_status') || $module_data) {
 				$data['extensions'][] = array(
-					'name'   => strip_tags($this->language->get('heading_title')),
+					'name'   => $this->language->get('heading_title'),
 					'code'   => $code,
 					'module' => $module_data
 				);

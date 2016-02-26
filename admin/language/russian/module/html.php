@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']     = 'Текстовый блок - HTML';
+$_['heading_title']     = 'HTML контент';
 
 // Text
 $_['text_module']       = 'Модули';

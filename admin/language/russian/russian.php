@@ -46,8 +46,8 @@ $_['button_copy']                   = 'Копировать';
 $_['button_back']                   = 'Назад';
 $_['button_remove']                 = 'Удалить';
 $_['button_refresh']                = 'Обновить';
-$_['button_export']                 = 'Экспорт';
-$_['button_import']                 = 'Импорт';
+$_['button_backup']                 = 'Бэкап';
+$_['button_restore']                = 'Восстановить';
 $_['button_download']               = 'Скачать';
 $_['button_rebuild']                = 'Починить';
 $_['button_upload']                 = 'Загрузить';
@@ -95,13 +95,10 @@ $_['button_unlock']                 = 'Разблокировать';
 $_['button_link']                   = 'Ссылка';
 $_['button_currency']               = 'Обновить значение валюты';
 $_['button_apply']                  = 'Применить';
-$_['button_category_add']           = 'Добавить категорию';
-
 
 
 // Tab
 $_['tab_address']                   = 'Адрес';
-$_['tab_additional']                = 'Дополнительно';
 $_['tab_admin']                     = 'Администратор';
 $_['tab_attribute']                 = 'Атрибуты';
 $_['tab_customer']                  = 'Клиент';

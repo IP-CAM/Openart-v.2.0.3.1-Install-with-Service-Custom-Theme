@@ -1,32 +1,51 @@
 <?php
-class Action {
+final class Action {
 	private $file;
 	private $class;
 	private $method;
 	private $args = array();
 
 	public function __construct($route, $args = array()) {
-		$parts = explode('/', str_replace('../', '', (string)$route));
+		$path = '';
 
 		// Break apart the route
-		while ($parts) {
-			$file = DIR_APPLICATION . 'controller/' . implode('/', $parts) . '.php';
+		$parts = explode('/', str_replace('../', '', (string)$route));
+
+		foreach ($parts as $part) {
+			$path .= $part;
+
+			if (is_dir(DIR_APPLICATION . 'controller/' . $path)) {
+				$path .= '/';
+
+				array_shift($parts);
+
+				continue;
+			}
+
+			$file = DIR_APPLICATION . 'controller/' . str_replace(array('../', '..\\', '..'), '', $path) . '.php';
 
 			if (is_file($file)) {
 				$this->file = $file;
 
-				$this->class = 'Controller' . preg_replace('/[^a-zA-Z0-9]/', '', implode('/', $parts));
+				$this->class = 'Controller' . preg_replace('/[^a-zA-Z0-9]/', '', $path);
+
+				array_shift($parts);
+
 				break;
-			} else {
-				$this->method = array_pop($parts);
 			}
 		}
 
-		if (!$this->method) {
-			$this->method = 'index';
+		if ($args) {
+			$this->args = $args;
 		}
 
-		$this->args = $args;
+		$method = array_shift($parts);
+
+		if ($method) {
+			$this->method = $method;
+		} else {
+			$this->method = 'index';
+		}
 	}
 
 	public function execute($registry) {

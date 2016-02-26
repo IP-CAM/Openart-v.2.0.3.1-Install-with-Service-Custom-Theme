@@ -180,14 +180,17 @@ class ControllerExtensionModule extends Controller {
 				);
 			}
 		}
-
-		$sort_order = array();
-
-		foreach ($data['extensions'] as $key => $value) {
-			$sort_order[$key] = $value['name'];
+		$names = array();
+		foreach ($data['extensions'] as $key => $row)
+		{
+			$names[$key] = $row['name'];
 		}
-
-		array_multisort($sort_order, SORT_ASC, $data['extensions']);
+		array_multisort($names, SORT_ASC, $data['extensions']);
+		if (isset($this->request->post['selected'])) {
+			$data['selected'] = (array)$this->request->post['selected'];
+		} else {
+			$data['selected'] = array();
+		}
 
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');

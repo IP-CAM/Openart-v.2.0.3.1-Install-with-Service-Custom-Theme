@@ -2,8 +2,7 @@
 <modification>
 <name>Tweak for OpenCart 2x Russkaya sborka</name>
 <code>Tweak for OpenCart 2x Russkaya sborka</code>
-<version>2.1.0.1</version>
-<date>12.10.2015</date>
+<version>2.0.3.1</version>
 <author>Romans</author>
 <link>http://opencart-russia.ru</link>
 
@@ -19,19 +18,9 @@
 
 <style>
 #column-left.active {width: 250px !important;}
-#column-left.active + #content {margin-left: 260px !important;}
+#column-left.active + #content {margin-left: 250px !important;}
 #menu > li > ul {width: 235px !important;}
 </style>
-		]]></add>
-	</operation>
-
-<!-- Подключаем свой русский текстовый редактор Summernote -->	
-	<operation>
-		<search><![CDATA[
-		<script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
-		]]></search>
-		<add position="replace" trim="true"><![CDATA[
-		<script type="text/javascript" src="view/javascript/summernote/summernote-rus.js"></script>
 		]]></add>
 	</operation>
 	
@@ -63,6 +52,17 @@
 		]]></add>
 	</operation>
 	
+</file>
+
+<!-- Удаляем пункт меню Fraud-->
+<file path="admin/view/template/common/menu.tpl">
+	<operation>
+		<search><![CDATA[
+		<li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+		]]></search>
+		<add position="replace"><![CDATA[
+		]]></add>
+	</operation>
 </file>
 
 <!-- Скрываем поля в форме товара -->
@@ -111,30 +111,6 @@
 	</operation>
 </file>
 
-<!-- Меняем местами пункты меню (в разделе Модули) для более удобной навигации -->
-<file path="admin/view/template/common/menu.tpl">
-	<operation>
-		<search><![CDATA[
-      <li><a href="<?php echo $analytics; ?>"><?php echo $text_analytics; ?></a></li>
-		]]></search>
-		<add position="replace" offset="3"><![CDATA[
-		]]></add>
-	</operation>
-	
-	<operation>
-		<search><![CDATA[
-      <li><a href="<?php echo $total; ?>"><?php echo $text_total; ?></a></li>
-		]]></search>
-		<add position="after"><![CDATA[
-      <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
-      <li><a href="<?php echo $analytics; ?>"><?php echo $text_analytics; ?></a></li>
-      <li><a href="<?php echo $captcha; ?>"><?php echo $text_captcha; ?></a></li>
-      <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
-		]]></add>
-	</operation>	
-	
-</file>
-
 <!-- Исправляем ошибку сохранения пустого значения -->
 <file path="admin/model/catalog/category.php">
 	<operation>
@@ -147,41 +123,16 @@
 	</operation>
 </file>
 
-<!-- Исправляем ошибку неизвестной переменной на странице импорта экспорта -->
-<file path="admin/controller/tool/backup.php">
+<!-- Добавляем валюту рубль в модуль -->
+<file path="catalog/model/payment/pp_standard.php">
 	<operation>
 		<search><![CDATA[
-		$data['entry_backup'] = $this->language->get('entry_backup');
+			'AUD',
 		]]></search>
-		<add position="after"><![CDATA[
-		$data['entry_export'] = $this->language->get('entry_export');
+		<add position="before"><![CDATA[
+			'RUB',
 		]]></add>
 	</operation>
 </file>
-
-<!-- Исправляем ошибку неправильного названия файла при скачивании лога ошибок -->
-<file path="admin\controller\tool\error_log.php">
-	<operation>
-		<search><![CDATA[
-		$this->response->addheader('Content-Disposition: attachment; filename=' . $this->config->get('config_name') . '_' . date('Y-m-d_H-i-s', time()) . '_error.log');
-		]]></search>
-		<add position="replace"><![CDATA[
-		$this->response->addheader('Content-Disposition: attachment; filename="' . $this->config->get('config_name') . '_' . date('Y-m-d_H-i-s', time()) . '_error.log"');
-		]]></add>
-	</operation>
-</file>
-
-<!-- Исправляем ошибку с порядком сортировки при добавлении изображения в банерах -->
-<file path="admin/view/template/design/banner_form.tpl">
-	<operation>
-		<search><![CDATA[
-		html += '  <td class="text-right" style="width: 10%;><input type="text" name="banner_image[' + image_row + '][sort_order]" value="" placeholder="<?php echo $entry_sort_order; ?>" class="form-control" /></td>';
-		]]></search>
-		<add position="replace"><![CDATA[
-		html += '  <td class="text-right" style="width: 10%;"><input type="text" name="banner_image[' + image_row + '][sort_order]" value="" placeholder="<?php echo $entry_sort_order; ?>" class="form-control" /></td>';
-		]]></add>
-	</operation>
-</file>
-
 
 </modification>
