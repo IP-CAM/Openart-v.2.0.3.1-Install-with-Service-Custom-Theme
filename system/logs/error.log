@@ -1,0 +1,16 @@
+2016-02-26 20:21:21 - PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at C:\OpenServer\domains\e-shop\index.php:54) in C:\OpenServer\domains\e-shop\system\library\session.php on line 12
+2016-02-26 20:21:21 - PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at C:\OpenServer\domains\e-shop\index.php:54) in C:\OpenServer\domains\e-shop\system\library\session.php on line 12
+2016-02-26 20:21:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\e-shop\catalog\model\agoo\design\layout.php on line 44
+2016-02-26 20:21:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\e-shop\catalog\model\agoo\design\layout.php on line 44
+2016-02-26 20:21:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\e-shop\catalog\model\agoo\design\layout.php on line 44
+2016-02-26 20:21:22 - PHP Notice:  unserialize(): Error at offset 0 of 79 bytes in C:\OpenServer\domains\e-shop\catalog\model\extension\module.php on line 7
+2016-02-26 20:21:22 - PHP Notice:  unserialize(): Error at offset 0 of 106 bytes in C:\OpenServer\domains\e-shop\catalog\model\extension\module.php on line 7
+2016-02-26 20:21:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\e-shop\catalog\model\agoo\design\layout.php on line 44
+2016-02-26 20:22:22 - PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at C:\OpenServer\domains\e-shop\index.php:54) in C:\OpenServer\domains\e-shop\system\library\session.php on line 12
+2016-02-26 20:22:22 - PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at C:\OpenServer\domains\e-shop\index.php:54) in C:\OpenServer\domains\e-shop\system\library\session.php on line 12
+2016-02-26 20:22:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\e-shop\catalog\model\agoo\design\layout.php on line 44
+2016-02-26 20:22:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\e-shop\catalog\model\agoo\design\layout.php on line 44
+2016-02-26 20:22:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\e-shop\catalog\model\agoo\design\layout.php on line 44
+2016-02-26 20:22:22 - PHP Notice:  unserialize(): Error at offset 0 of 79 bytes in C:\OpenServer\domains\e-shop\catalog\model\extension\module.php on line 7
+2016-02-26 20:22:22 - PHP Notice:  unserialize(): Error at offset 0 of 106 bytes in C:\OpenServer\domains\e-shop\catalog\model\extension\module.php on line 7
+2016-02-26 20:22:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\e-shop\catalog\model\agoo\design\layout.php on line 44

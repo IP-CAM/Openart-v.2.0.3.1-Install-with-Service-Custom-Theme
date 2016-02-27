@@ -16,6 +16,13 @@
 	.hide-when-small {
 		display: none !important;
 	}
+	.responsive-menu-body .flex-wrapper {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
 	.header .outer.flex-wrapper {
 		justify-content: space-between;
 	}
@@ -41,14 +48,18 @@
 		padding: 30px 0;
 	}
 	.footer .flex-wrapper {
-		flex-direction: column;
 		padding-left: 10px;
 	}
 	.footer-title {
-		margin-top: 15px;
 		margin-bottom: 10px;
 	}
-	.neuro-logo {
+
+	.footer .column:nth-child(2),
+	.footer .column:nth-child(3),
+	.footer .column:nth-child(4) {
+		display: none;
+	}
+	.footer .column:nth-child(1) .footer-title {
 		display: none;
 	}
 	.motivation-image img {
@@ -67,5 +78,31 @@
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-	}  
+	} 
+	.get-price .flex-wrapper {
+		flex-direction: column;
+	}
+	.get-price .weigher {
+		margin-bottom: 10px;
+	}
+	.product-full .product-full-flex-wrapper {
+		flex-direction: column;
+	}
+	.product-full .gallery {
+		width: auto;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	.product-full .all-description {
+		width: auto;
+	}
+	.features.flex-wrapper {
+		flex-wrap: wrap;
+	}
+	.product-full .features .flex-item {
+		flex: 0 0 50%;
+	}
+	table.stats td {
+		font-size: 14px;
+	}
 }
