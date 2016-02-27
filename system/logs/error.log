@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2016-02-26 20:21:21 - PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at C:\OpenServer\domains\e-shop\index.php:54) in C:\OpenServer\domains\e-shop\system\library\session.php on line 12
 2016-02-26 20:21:21 - PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at C:\OpenServer\domains\e-shop\index.php:54) in C:\OpenServer\domains\e-shop\system\library\session.php on line 12
 2016-02-26 20:21:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\e-shop\catalog\model\agoo\design\layout.php on line 44
@@ -14,3 +15,53 @@
 2016-02-26 20:22:22 - PHP Notice:  unserialize(): Error at offset 0 of 79 bytes in C:\OpenServer\domains\e-shop\catalog\model\extension\module.php on line 7
 2016-02-26 20:22:22 - PHP Notice:  unserialize(): Error at offset 0 of 106 bytes in C:\OpenServer\domains\e-shop\catalog\model\extension\module.php on line 7
 2016-02-26 20:22:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\e-shop\catalog\model\agoo\design\layout.php on line 44
+=======
+2016-02-26 18:22:13 - PHP Notice:  Undefined variable: text_main in Z:\home\e-shop\www\catalog\view\theme\service\template\common\header.tpl on line 105
+2016-02-26 18:23:34 - PHP Notice:  Undefined variable: text_main in Z:\home\e-shop\www\catalog\view\theme\service\template\common\header.tpl on line 105
+2016-02-26 18:24:36 - PHP Notice:  Undefined variable: text_main in Z:\home\e-shop\www\catalog\view\theme\service\template\common\header.tpl on line 105
+2016-02-26 18:28:18 - PHP Notice:  Undefined variable: text_account1 in Z:\home\e-shop\www\catalog\view\theme\service\template\common\header.tpl on line 105
+2016-02-27 14:24:39 - PHP Notice:  Undefined variable: action in Z:\home\e-shop\www\catalog\view\theme\service\template\common\header.tpl on line 90
+2016-02-27 14:24:39 - PHP Notice:  Undefined variable: languages in Z:\home\e-shop\www\catalog\view\theme\service\template\common\header.tpl on line 93
+2016-02-27 14:24:39 - PHP Warning:  Invalid argument supplied for foreach() in Z:\home\e-shop\www\catalog\view\theme\service\template\common\header.tpl on line 93
+2016-02-27 14:24:39 - PHP Notice:  Undefined variable: redirect in Z:\home\e-shop\www\catalog\view\theme\service\template\common\header.tpl on line 98
+2016-02-27 14:25:01 - PHP Notice:  Undefined variable: languages in Z:\home\e-shop\www\catalog\view\theme\service\template\common\header.tpl on line 90
+2016-02-27 14:44:49 - PHP Notice:  Undefined variable: session in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 14:44:49 - PHP Notice:  Trying to get property of non-object in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 14:44:49 - PHP Notice:  Undefined variable: session in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 14:44:49 - PHP Notice:  Trying to get property of non-object in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 14:44:49 - PHP Notice:  Undefined variable: session in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 14:44:49 - PHP Notice:  Trying to get property of non-object in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 14:45:08 - PHP Notice:  Undefined property: Loader::$session in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 14:45:08 - PHP Notice:  Trying to get property of non-object in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 14:45:08 - PHP Notice:  Undefined property: Loader::$session in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 14:45:08 - PHP Notice:  Trying to get property of non-object in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 14:45:08 - PHP Notice:  Undefined property: Loader::$session in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 14:45:08 - PHP Notice:  Trying to get property of non-object in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 14:48:09 - PHP Notice:  Undefined variable: language_code in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 17
+2016-02-27 14:48:09 - PHP Notice:  Undefined variable: language_code in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 17
+2016-02-27 14:48:09 - PHP Notice:  Undefined variable: language_code in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 17
+2016-02-27 14:49:18 - PHP Notice:  Undefined variable: session in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 17
+2016-02-27 14:49:18 - PHP Notice:  Trying to get property of non-object in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 17
+2016-02-27 14:49:18 - PHP Notice:  Undefined variable: session in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 17
+2016-02-27 14:49:18 - PHP Notice:  Trying to get property of non-object in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 17
+2016-02-27 14:49:18 - PHP Notice:  Undefined variable: session in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 17
+2016-02-27 14:49:18 - PHP Notice:  Trying to get property of non-object in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 17
+2016-02-27 15:13:57 - PHP Notice:  Undefined variable: captcha in Z:\home\e-shop\www\catalog\view\theme\service\template\product\product.tpl on line 102
+2016-02-27 15:14:30 - PHP Notice:  Undefined variable: captcha in Z:\home\e-shop\www\catalog\view\theme\service\template\product\product.tpl on line 102
+2016-02-27 15:14:51 - PHP Notice:  Undefined variable: captcha in Z:\home\e-shop\www\catalog\view\theme\service\template\product\product.tpl on line 102
+2016-02-27 15:15:02 - PHP Notice:  Undefined variable: captcha in Z:\home\e-shop\www\catalog\view\theme\service\template\product\product.tpl on line 102
+2016-02-27 15:25:34 - PHP Notice:  Undefined variable: captcha in Z:\home\e-shop\www\catalog\view\theme\service\template\product\product.tpl on line 102
+2016-02-27 15:25:52 - PHP Notice:  Undefined variable: captcha in Z:\home\e-shop\www\catalog\view\theme\service\template\product\product.tpl on line 102
+2016-02-27 15:46:37 - PHP Notice:  Undefined variable: session in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 15:46:37 - PHP Notice:  Trying to get property of non-object in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 15:46:37 - PHP Notice:  Undefined variable: session in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 15:46:37 - PHP Notice:  Trying to get property of non-object in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 15:46:37 - PHP Notice:  Undefined variable: session in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 15:46:37 - PHP Notice:  Trying to get property of non-object in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 16:09:25 - PHP Notice:  Undefined variable: current_language_code in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 16:09:25 - PHP Notice:  Undefined variable: current_language_code in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 16:09:25 - PHP Notice:  Undefined variable: current_language_code in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 18
+2016-02-27 16:13:49 - PHP Notice:  Use of undefined constant lang - assumed 'lang' in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 8
+2016-02-27 16:13:49 - PHP Notice:  Use of undefined constant lang - assumed 'lang' in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 8
+2016-02-27 16:13:49 - PHP Notice:  Use of undefined constant lang - assumed 'lang' in Z:\home\e-shop\www\catalog\view\theme\service\template\common\language.tpl on line 8
+>>>>>>> 71f46dd6df82f93fbcb633d5b3b1ccd16ededcdc

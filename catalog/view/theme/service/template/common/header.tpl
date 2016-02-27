@@ -28,11 +28,11 @@
   <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
   <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
-  <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
+
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="catalog/view/theme/default/stylesheet/adaptiveness.css">
+
   <?php foreach ($styles as $style) { ?>
   <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
   <?php } ?>
@@ -41,37 +41,12 @@
   <script src="<?php echo $script; ?>" type="text/javascript"></script>
   <?php } ?>
   <?php echo $google_analytics; ?>
+  <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
+  <link rel="stylesheet" href="catalog/view/theme/default/stylesheet/adaptiveness.css">
 </head>
 
 <body class="<?php echo $class; ?>">
-<nav id="top">
-  <div class="container">
-    <?php echo $currency; ?>
-    <?php echo $language; ?>
-    <div id="top-links" class="nav pull-right">
-      <ul class="list-inline">
-        <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
-        <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <?php if ($logged) { ?>
-            <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-            <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-            <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
-            <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
-            <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
-            <?php } else { ?>
-            <li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
-            <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
-            <?php } ?>
-          </ul>
-        </li>
-        <li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
-        <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
-        <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
 
 <header class="header">
   <div class="upper-part">
@@ -82,11 +57,7 @@
         </div>
         <p class="site-description hide-when-small flex-wrapper upper-flex-item">ИЗГОТОВЛЕНИЕ, ОБСЛУЖИВАНИЕ и РЕМОНТ ДИЗЕЛЬНЫх ЭЛЕКТРОСТАНЦИй И КОНВЕРСИОННОЙ ТЕХНИКИ.</p>
         <div class="languages-selection flex-wrapper upper-flex-item">
-          <div class="flex-wrapper">
-            <a href="" class="lang">Ua</a>
-            <a href="" class="lang">En</a>
-            <a href="" class="lang active">Ru</a>
-          </div>
+          <?php echo $language; ?>
         </div>
         <div class="regime site-description hide-when-small upper-flex-item">Режим работы: <br> с 9:00 до 17:00</div>
         <div class="phones upper-flex-item">
@@ -102,7 +73,7 @@
       <nav class="outer flex-wrapper">
         <ul class="flex-wrapper main-nav">
           <?php if ($logo) { ?>
-          <li><a href="<?php echo $home; ?>">Главная</a></li>
+          <li><a href="<?php echo $home; ?>"><?php echo $text_main; ?></a></li>
           <?php } else { ?>
           <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
           <?php } ?>
@@ -132,7 +103,7 @@
     </div>
   </div>
   <div class="responsive-menu flex-wrapper">
-    <div class="logo-wrapper flex-item"><img src="catalog/view/theme/default/image/logo.png" alt=""></div>
+    <div class="logo-wrapper flex-item"><img src="catalog/view/theme/service/image/logo.png" alt=""></div>
     <h1 class="page-name flex-item">Дизельные электростанции</h1>
     <div class="trigger-wrapper">
       <button class="menu-trigger flex-item" onclick="toggleResponsiveMenu()" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
@@ -153,4 +124,13 @@
       <li><a href="">Контакты</a></li>
     </ul>
   </div>
+  <section class="motivation-image">
+    <img src="catalog/view/theme/service/image/main-image.jpg" alt="">
+    <div class="wide-body-layout">
+      <div class="we-bring-light">
+        <h2 class="">ДАРИМ СВЕТ</h2>
+        <small>КОГДА ЕГО НЕТ</small>
+      </div>
+    </div>
+  </section>
 </header>
